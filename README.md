@@ -1,6 +1,6 @@
 # Backend - API de Gestión de Contactos (Laravel)
 
-API RESTful desarrollada en Laravel para la gestión y registro de contactos.
+API desarrollada en Laravel para la gestión y registro de contactos.
 
 ## Versiones y Requisitos Exactos
 * PHP: v8.4.16
@@ -51,3 +51,6 @@ DB_CONNECTION=sqlite
 
 ## IA Utilizada
 * Herramientas de IA: Etructurar las migraciones, la lógica del controlador API y las reglas de validación en las peticiones HTTP.
+
+## Tiempo efectivo invertido
+- Aproximadamente el tiempo efectivo invertido fue de 4 a 5 horas, sin incluir el tiempo de corrección de errores y el tiempo de preparación de envío.
