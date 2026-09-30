@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\Contacto;
 use Illuminate\Http\Request;
 
 class ContactoController extends Controller
@@ -9,12 +9,17 @@ class ContactoController extends Controller
     //
     public function index()
     {
-        return response()->json(Contacto::all(),200);
+        return response()->json(Contacto::latest()->get(),200);
     }
 
     public function store(Request $request)
     {
-        $contacto = Contacto::create($request->all());
+        $contacto = Contacto::create([
+            'nombre' => $request->nombre,
+            'email' => $request->email,
+            'telefono' => $request->telefono,
+            'status' => true
+        ]);
         return response()->json($contacto, 201);
     }
 }
